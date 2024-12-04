@@ -1,0 +1,103 @@
+@media only screen and (max-width: 1050px) {
+  h1 {
+    font-size: 28px;
+  }
+
+  h2 {
+    font-size: 28px;
+  }
+
+  .containerLeft {
+    width: calc(100% - 250px);
+  }
+
+  .containerRight {
+    width: 250px;
+    flex-grow: 1;
+    padding: 16px;
+    background-color: white;
+  }
+}
+
+@media only screen and (max-width: 950px) {
+  h1 {
+    font-size: 24px;
+    text-align: center;
+  }
+
+  h2 {
+    font-size: 24px;
+  }
+}
+
+@media only screen and (max-width: 800px) {
+  .containerAll {
+    display: inline-block;
+    margin-bottom: 16px;
+  }
+
+  .containerLeft {
+    width: 100%;
+  }
+
+  .containerRight {
+    width: 100%;
+  }
+
+  #basketBtn {
+    display: block;
+  }
+
+  .containerAll {
+    padding-inline: clamp(16px, 12vw, 16px);
+  }
+
+  .containerRight {
+    top: 0px;
+    left: 0px;
+    right: 0px;
+    bottom: 0px;
+    overflow-y: hidden;
+    position: fixed;
+    width: 100%;
+
+    display: none;
+  }
+
+  .BasketContainer {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .basketBtn {
+    display: inline-block;
+  }
+
+  .dishBasketContainer {
+    max-height: calc(100vh - 300px);
+    flex: 1;
+  }
+
+  .costsPlusDelivery {
+    bottom: 0px;
+    width: 100%;
+    background-color: white;
+    position: absolute;
+    padding-top: 16px;
+  }
+
+  .orderMessage {
+    display: none;
+    position: absolute;
+    top: 200px;
+    width: 100%;
+  }
+}
+
+@media only screen and (max-width: 400px) {
+  .linkAnchor {
+    margin-right: 0px;
+    padding: 8px 12px;
+    font-weight: 300;
+  }
+}

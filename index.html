@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="de">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="stylesheet" href="./style.css" />
+    <link rel="stylesheet" href="./styles/standard.css" />
+    <link rel="stylesheet" href="./styles/components.css" />
+    <link rel="stylesheet" href="./styles/fonts.css" />
+    <link rel="stylesheet" href="./styles/media.css" />
+
+    <link rel="icon" type="image/x-icon" href="./assets/icons/mortar-pestle-solid.svg">
+
+    <title>Deliroo</title>
+  </head>
+
+  <body onload="renderStarter (), renderMain (), renderDessert (), renderBasket (), basketBtnContent()">
+    <header class="atf">
+      <div>
+        <a href="./index.html"
+          ><img
+            class="logo"
+            src="./assets/icons/mortar-pestle-solid_white.png"
+            alt="cutlery icon"
+        /></a>
+        <span class="companyName" ;>Deliroo</span>
+      </div>
+  
+    </header>
+
+    <main>
+      <section class="containerAll">
+      <section class="containerLeft">
+      <section class="head">
+        <button onclick="topFunction()" id="topBtn" title="Go to top"></button>
+        <button onclick="toggleMobileBasket()" id="basketBtn"  title="Go to basket"></button>
+        <h1>Saffron & Spice Restaurant</h1>
+      </section>
+
+      <section>
+        <div class="introContent"></p>
+          Welcome to Saffran & Spice, where the rich flavors of India come to life. Our family-owned restaurant brings authentic Indian
+          cuisine to your table, blending traditional recipes with the finest
+          spices and fresh ingredients. From aromatic biryanis to flavorful
+          curries, every dish is crafted with care to deliver a memorable dining
+          experience. Whether you're craving a warm, comforting meal or a bold,
+          spicy adventure, Saffran & Spice invites you to savor the essence of
+          India in every bite. Come, experience the taste of tradition with a
+          modern twist!
+        </div>
+        <div class="linkAnchorContainer">
+          <a class="linkAnchor" href="#starter">Starter</a>
+          <a class="linkAnchor" href="#main">Main</a>
+          <a class="linkAnchor" href="#deserts">Dessert</a>
+        </div>
+      </section>
+
+      <section class="courseConatiner">
+        <img
+          class="coursImg"
+          src="./assets/img/anshu-a-iGkEDLE5-iQ-unsplash.jpg"
+          alt=""
+        />
+        <div id="starter"><h2>Starter</h2></div>
+        <div id="dishUnitStarter" class="dishCategory"></div>
+      </section>
+
+    <section class="courseConatiner">
+      <div class="linkAnchorContainer">
+        <a class="linkAnchor" href="#starter">Starter</a>
+        <a class="linkAnchor" href="#main">Main</a>
+        <a class="linkAnchor" href="#deserts">Dessert</a>
+      </div>
+      <img
+        class="coursImg"
+        src="./assets/img/brooke-lark-oaz0raysASk-unsplash.jpg"
+        alt=""
+      />
+      <div id="main"><h2>Main</h2></div>
+      <div id="dishUnitMain" class="dishCategory">
+      </div>
+    </section>
+
+    <section id="courseConatiner=" class="courseConatiner">
+      <div class="linkAnchorContainer">
+        <a class="linkAnchor" href="#starter">Starter</a>
+        <a class="linkAnchor" href="#main">Main</a>
+        <a class="linkAnchor" href="#deserts">Dessert</a>
+      </div>
+      <img
+        class="coursImg"
+        src="./assets/img/neetu-laddha-ih9M_EzL14w-unsplash.jpeg"
+        alt=""
+      />
+      <div id="deserts"><h2>Desert</h2></div>
+      <div id="dishUnitDessert" class="dishCategory"></div>
+    </section>
+  </section>
+
+    <section id="containerRight" class="containerRight">
+ 
+      <div class="BasketContainer">
+        <button onclick="toggleMobileBasket()" class="basketBtn">Back To Menu</button>
+        <h2 style="text-align: center; font-weight: bold; margin-top: 0px;">My Basket</h2>
+        <div id="dishBasketContainer" class="dishBasketContainer">
+      </div>
+      <div  id="dishBasketPriceContainer" class="costsPlusDelivery" >
+        <div class="deliveryAndCostUnit">
+          <p>Zwischensumme</p>
+          <div class="summFood" id="sum__Food"></div>
+        </div>
+        <div class="deliveryAndCostUnit">
+          <p>Lieferkosten</p>
+          <div class="amountDelivery" id="amountDelivery"></div>
+        </div>
+        <div style="font-weight: bold" class="deliveryAndCostUnit">
+          <p>Gesamt</p>
+          <div class="summTotal" id="summTotal"></div>
+        </div>  
+        <div id=orderBtn></div>
+    </div>
+    <div id="submitOrderMessage" class="orderMessage"></div>
+  </div>
+  </div>
+    </section>
+
+  </section>
+    </main>
+
+    <footer id="footer">
+      <div>
+        <a href="./index.html"
+          ><img
+            class="logo"
+            src="./assets/icons/mortar-pestle-solid_white.png"
+            alt="cutlery icon"
+        /></a>
+      </div>
+      <div>
+        <a class="link" style="margin-right: 8px;" href="./impressum.html">Impressum</a>
+        <a class="link" href="./datenschutz.html">Datenschutz</a>
+      </div> 
+    </footer>
+  </body>
+
+  <script src="./scripts/components.js"></script>
+  <script src="./scripts/db.js"></script>
+  <script src="./scripts/templates.js"></script>
+  <script src="./script.js"></script>
+</html>
